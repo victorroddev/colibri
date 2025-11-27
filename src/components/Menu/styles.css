@@ -1,0 +1,47 @@
+.menu{
+    height: 0px;
+    display: flex;
+    width: 100%;
+    top: 82px;
+    right: 0;
+    overflow: hidden;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    flex-direction: row;
+    transition: height 0.5s ease-in-out;
+    -webkit-transition: height 0.5s ease-in-out;
+    -moz-transition: height 0.5s ease-in-out;
+    -ms-transition: height 0.5s ease-in-out;
+    -o-transition: height 0.5s ease-in-out;
+    background-color:  var(--color-rose);
+}
+
+
+.menu-visible{
+    height: 40px;
+    position: fixed;
+    display: flex;
+    width: 100%;
+}   
+
+.menu a {
+    opacity: 0;
+    text-decoration: none;
+    color: white;
+    font-family: 'Cinzel';
+    font-weight: 700;
+    font-size: 1rem;
+    transition: opacity 0.3s ease-in-out;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition-delay: 0s;
+}
+
+.menu-visible a{
+    opacity: 1;
+    transition-delay: 0.4s;
+}

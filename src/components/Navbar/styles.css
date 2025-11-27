@@ -1,0 +1,207 @@
+
+.navbar-container{
+    position: absolute;
+    z-index: 50;
+    margin-top: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    width: 95%;
+    flex-direction: row;
+    padding-left: 1rem;
+    justify-items: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--color-rose);
+    padding-bottom: 1rem;
+}
+
+.menu-icon{
+    display: flex;
+    gap: 7px;
+    flex-wrap: wrap;
+    max-width: 50px;
+    max-height: 60px;
+    max-height: 70px;
+    transition: transform 0.5s ease-in-out;
+    -webkit-transition: transform 0.5s ease-in-out;
+    -moz-transition: transform 0.5s ease-in-out;
+    -ms-transition: transform 0.5s ease-in-out;
+    -o-transition: transform 0.5s ease-in-out;
+}
+
+.menu-icon-open{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+.square{
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-rose);
+    z-index: 50;
+}
+
+.spacer-navbar{
+    width: 50px;
+}
+
+.hero-ctas{
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px 0 10px;
+    align-items: center;
+}
+
+.services-hero-button{
+    position: relative;
+    display: flex;
+    padding: 10px 40px 10px 40px;
+    background-color: rgb(255, 231, 184, .30);
+    color: var(--color-creamy);
+    box-shadow: none;
+    border: none;
+    font-size: 1.5rem;
+    font-family: 'Quatro';
+    text-transform: uppercase;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.services-hero-button::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-mustard);
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    opacity: 30%;
+}
+
+.hero-ctas img{
+    width: 20px;
+}
+
+.rrss-buttons{
+    display: flex;
+    flex-direction: column;
+    color: var(--color-creamy);
+    font-size: 2rem;
+    gap: 0.5rem;
+}
+
+.navbar-container button{
+    background: none;
+    box-shadow: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navbar-links{
+    display: flex;
+    gap: 1rem;
+    color: black;
+    list-style-type: none;
+}
+
+.navbar-link{
+    font-size: 1.4rem;
+    font-family: 'Cinzel';
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.navbar-link:hover{
+    color: var(--color-rose);
+}
+
+.colibri-text-navbar-icon-black{
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+    .navbar-container button{
+        display: none;
+
+    }
+    .navbar-container img{
+        order: 1;
+        
+    }
+
+    .navbar-links{
+        order: 2;
+        margin-right: 2rem;
+        align-items: center;
+    }
+
+    .colibri-text-navbar-icon{
+        margin-left: 2rem;
+        margin: 0;
+    }
+
+    .navbar-container{
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 0;
+        border-bottom: none;
+        position: static;
+    }
+
+    .spacer-navbar{
+        display: none;
+    }
+
+    .colibri-text-navbar-icon{
+        display: none;
+    }
+
+    .date-link{
+        padding: 0.5rem;
+        background-color: var(--color-rose);
+        width: 220px;
+        text-align: center;
+        transition: background-color 0.5s ease;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -ms-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+    }
+
+    .hero-container-desktop button {
+        cursor: pointer;
+    }
+
+    .date-link:hover{
+        background-color: white;
+        transition: background-color 0.5s ease;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -ms-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+}
+
+    .navbar-link{
+        cursor: pointer;
+    }
+
+    
+
+}
+
+@media (max-width: 1024px) {
+    .navbar-links{
+        display: none;
+    }
+    .colibri-text-navbar-icon-black{
+        display: none;
+    }
+}

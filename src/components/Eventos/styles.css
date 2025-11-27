@@ -1,0 +1,49 @@
+.eventos-container{
+    width: 100%;
+    margin: 3rem auto;
+    overflow: hidden;
+}
+
+
+.eventos-container h3{
+    text-align: center;
+    font-weight: 100;
+}
+
+.eventos-container span {
+    color: var(--color-rose);
+    font-weight: bold;
+}
+
+.eventos-container p{
+    text-align: center;
+}
+
+.eventos-line{
+    position: absolute;
+    top: 8rem;
+    width: 100%;
+    z-index: -10;
+}
+
+.portraits-container{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    margin: 3rem auto 0 auto;
+}
+
+@media(min-width: 768px){
+
+    .portraits-container{
+        max-width: 1480px;
+    }
+
+    .eventos-line{
+        visibility: hidden;
+    }
+}
+

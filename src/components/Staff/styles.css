@@ -1,0 +1,35 @@
+.staff-container{
+    background-color: var(--color-rose);
+}
+
+.staff-items-container{
+    margin-top: 2rem;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.staff-subtitle{
+    margin: 1rem 0 1rem;
+}
+
+.splide__arrow{
+    font-size: 1rem;
+}
+
+.splide-controls{
+    width: 400px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.splide-controls button{
+    background-color: transparent;
+    border: none;
+    font-size: 3rem;
+    color: var(--color-creamy);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+

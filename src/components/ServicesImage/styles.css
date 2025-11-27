@@ -1,0 +1,25 @@
+
+
+.services-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 85%;
+    max-width: 380px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-service{
+    object-fit: cover;
+    max-width: 400px;
+    height: 400px;
+}
+
+.service-title{
+    font-family: 'Quatro';
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}

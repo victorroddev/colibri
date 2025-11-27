@@ -1,0 +1,239 @@
+.hero-container{
+    display: flex;
+    background-image: url('../../img/hero-mobile.webp');
+    width: 100%;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-container-services{
+    display: flex;
+    background-image: url('../../img/hero-mobile.webp');
+    width: 100%;
+    height: 850px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;    
+}
+
+
+.transparent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 10;
+    opacity: 40%;
+}
+
+.hero-colibri-icon{
+    z-index: 20;
+}
+
+.hero-colibri-icon-right{
+    position: absolute;
+    right: 0;
+    height: 35rem;
+    top:  60%;
+    transform: translateY(-60%);
+    -webkit-transform: translateY(-60%);
+    -moz-transform: translateY(-60%);
+    -ms-transform: translateY(-60%);
+    -o-transform: translateY(-60%);
+}
+
+.hero-colibri-icon-left{
+    position: absolute;
+    display: flex;
+    height: 20rem;
+    margin-right: auto;
+    top: 11%;
+}
+
+.hero-icon{
+    width: 8rem;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+.hero-first-title{
+    font-size: 2.4rem;
+    color: var(--color-creamy);
+    font-family: 'Cinzel';
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+.hero-second-title{
+    font-size: 6rem;
+    color: var(--color-rose);
+    font-family: 'Cinzel';
+    font-weight: 200;
+    margin: 0;
+    text-transform: uppercase;
+
+}
+
+.hero-third-title{
+    font-size: 1.4rem;
+    color: var(--color-creamy);
+    font-family: 'Quatro';
+    text-transform: uppercase;
+}
+
+.hero-container-dekstop{
+    display: none;
+}
+
+.hero-texts{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 40;
+    top: 13%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    
+    .hero-container{
+        display: none;
+    }
+
+    .transparent{
+        display: none;
+    }
+
+    .hero-colibri-icon-right {
+        display: none;
+    }
+    
+    .hero-colibri-icon-left {
+        display: none;
+    }
+
+    .hero-texts{
+        border:  1px solid var(--color-rose);
+        width: 95%;
+        height: 1000px;
+        position: static;
+    }
+
+    .hero-container-dekstop{
+        display: flex;
+        width: 96%;
+        margin: 0 auto;
+        height: 700px;
+        margin-top: 2rem;
+        align-items: center;
+        border: 1px solid var(--color-rose);
+        background-color: var(--color-rose);
+    }
+
+    .hero-desktop-texts {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        width: 40%;
+    }
+
+    .hero-desktop-text{
+        text-transform: uppercase;
+    }
+
+    .services-hero-button-desktop{
+        background-color: var(--color-creamy);
+        border: none;
+        padding: 1rem;
+        width: 320px;
+        font-family: 'Quatro';
+        font-size: 1.5rem;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    .hero-desktop-texts p:nth-child(1){
+        color: black;
+        font-weight: 100;
+        font-size: 2.5rem;
+    }
+
+    .hero-desktop-texts p:nth-child(2){
+        color: var(--color-creamy);
+        font-family: 'Cinzel';
+        font-size: 8rem;
+        font-weight: 300;
+    }
+
+    .hero-desktop-texts p:nth-child(3){
+        color: black;
+        font-weight: 100;
+        font-size: 1.5rem;
+        font-family: 'Quatro';
+        margin-bottom: 1rem;
+    }
+
+    .hero-desktop-right{
+        display: flex;
+        width: 60%;
+        right: 0;
+    }
+
+    .hero-desktop-img-container{
+        width: 100%;
+        height: 500px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-desktop-img-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 9rem;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../img/hero-desktop.webp');
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 3rem;
+    border-top-left-radius: 3rem;    
+    z-index: 0; 
+}
+
+    .hero-desktop-img-container::after{
+        content: "";
+        position: absolute;
+        top: -40px;
+        right: -20px;
+        width: 90%;
+        height: 500px;
+        border: 5px solid white;
+        z-index: -1;
+        border-top-left-radius: 3rem;
+    }
+
+    .hero-desktop-icon{
+        width: 14rem;
+        position: relative;
+        align-self: flex-end;
+        left: -1rem;
+        z-index: 11;
+        top: 4rem;
+    }
+
+}

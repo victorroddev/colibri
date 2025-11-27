@@ -1,0 +1,72 @@
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 6rem;
+    padding: 2rem;
+    border-top: solid 2px var(--color-rose);
+    overflow: hidden;
+}
+
+.phone-number-container p{
+    text-align: center;
+    font-family: 'Lora';
+    font-size: 1.2rem;
+}
+
+.footer-logo{
+    width: 100px;
+}
+
+.footer-social-media-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.facebook-footer-icon, .instagram-footer-icon{
+    font-size: 2.2rem;
+    color: var(--color-rose);
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lora';
+}
+
+.footer-links-title{
+    margin-bottom: -1rem;
+    font-family: 'Lora';
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.footer-shapes{
+    margin-top: -2rem;
+}
+
+.colibri-left-shape{
+    width: 200px;
+    position: absolute;
+    left: -2rem;
+}
+
+.colibri-right-shape{
+    width: 200px;
+    position: absolute;
+    right: 0;
+}

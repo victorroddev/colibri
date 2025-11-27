@@ -1,0 +1,86 @@
+.contact-container{
+    margin-top: 2rem;
+}
+
+.contact-container form{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.form-int-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.contact-container label{
+    font-family: 'Lora';
+    font-size: 1.3rem;
+}
+input, textarea{
+    font-family: 'Lora';
+    padding: 0.5rem;
+    border: solid 1.4px var(--color-rose);
+    background-color: transparent;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+input[type="text"], 
+input[type="tel"], 
+textarea {
+    border: 1.4px solid var(--color-rose); 
+    outline: none; 
+    transition: border-color 0.3s ease;
+}
+
+
+input[type="text"]:focus, 
+input[type="tel"]:focus, 
+textarea:focus {
+    border-color: red; 
+    box-shadow: 0 0 5px var(--color-rose); 
+}
+
+.contact-container button{
+    background-color: var(--color-rose);
+    border: none;
+    padding: 1rem;
+    font-family: 'Quatro';
+    font-size: 1.5rem;
+    color: var(--color-creamy);
+}
+
+.contact-paragraph{
+    margin-bottom: 2rem;
+}
+
+.contact-img{
+    width: 95%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-top-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+}
+
+.contact-items{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1360px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+@media (max-width: 1024px){
+    .contact-img{
+        display: none;
+    }
+}
