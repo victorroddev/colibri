@@ -49,7 +49,7 @@ const Services = () => {
                 </div>
                 <div className="service-min" >
                     <img src={canapes} alt="" className="service-min-img"/>
-                    <p className="service-title-min">Charcuteria</p>
+                    <p className="service-title-min">Canapés</p>
                 </div>
                 <div className="service-min">
                     <img src={charcuteria} alt="" className="service-min-img"/>
